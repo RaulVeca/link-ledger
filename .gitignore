@@ -1,0 +1,6 @@
+.env
+.venv/
+
+# Un branch nou in git -> commit in branchul nou -> github pull request (merge request)
+# features/link-11 (numele)
+# scoate logurile, scoate pyc

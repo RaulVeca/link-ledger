@@ -1,0 +1,20 @@
+# Django and web framework dependencies
+Django==5.2.5
+python-dotenv==1.1.1
+asgiref==3.9.1
+
+# Supabase client
+supabase==2.18.0
+
+# Temporal workflow engine
+temporalio==1.15.0
+
+# OCR processing with doctr
+python-doctr==1.0.0
+# Note: python-doctr requires torch, which will be installed automatically
+# If you have GPU support, you might want to install torch with CUDA support manually
+
+# Additional dependencies that might be needed
+Pillow==11.3.0  # For image processing
+numpy==2.1.3   # Required by doctr
+opencv-python==4.12.0.88  # Required by doctr

@@ -1,0 +1,31 @@
+# Temporal dynamic configuration for development
+# Place this file in: ./temporal-dynamic-config/development-sql.yaml
+
+# Increase default timeouts for development
+system.forceSearchAttributesCacheRefreshOnRead:
+  - value: true
+    constraints: {}
+
+# Useful for development - increases visibility of errors
+limit.maxIDLength:
+  - value: 1000
+    constraints: {}
+
+# Retention period for workflow history (in days)
+history.retentionDays:
+  - value: 7
+    constraints: {}
+
+# Enable enhanced workflow search capabilities
+system.enableVisibilityToOpenWorkflowExecutions:
+  - value: true
+    constraints: {}
+
+# Increase task queue processing rates for better development experience
+matching.numTaskqueueReadPartitions:
+  - value: 4
+    constraints: {}
+
+matching.numTaskqueueWritePartitions:
+  - value: 4
+    constraints: {}
